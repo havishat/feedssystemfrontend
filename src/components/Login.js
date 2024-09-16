@@ -23,7 +23,7 @@ function Login(){
         // navigate('/');
     }
     return(
-        <div>
+        <div className="login-container">
             <h1>Welcome to Login Page</h1>
             <form onSubmit={handleLogin}>
                 <div>
