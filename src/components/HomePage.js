@@ -2,12 +2,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function Home(){
+function HomePage(){
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        navigate('/login');
+      };
 
     return (
         <div className="home-container">
@@ -17,4 +21,4 @@ function Home(){
     );
 };
 
-export default Home;
+export default HomePage;

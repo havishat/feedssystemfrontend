@@ -46,4 +46,4 @@ function RegistrationPage(){
     )
 }
 
-export default Register;
+export default RegistrationPage;
