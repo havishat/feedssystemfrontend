@@ -12,6 +12,7 @@ function Home(){
     return (
         <div className="home-container">
             <h1>Welcome to Feeds Home Page</h1>
+            <button onClick={handleLogout}>Logout</button>
         </div>
     );
 };
