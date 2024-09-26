@@ -8,12 +8,12 @@ import RegistrationPage from './components/RegistrationPage'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-        <Route path="/register" element={<RegistrationPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/register" component={<RegistrationPage />} />
+        <Route path="/login" component={<LoginPage />} />
+        <Route path="/home" component={<HomePage />} />
+        <Route path="/" component={<LoginPage />} />
         </Routes>
       </Router>
     </div>
